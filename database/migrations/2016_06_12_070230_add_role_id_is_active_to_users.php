@@ -14,7 +14,7 @@ class AddRoleIdIsActiveToUsers extends Migration
     {
         Schema::table('users', function($table) {
             $table->integer('role_id')->index()->unsigned()->nullable(); // so user can be related to roles table
-            $table->integer('is_active')->default(0); // take priveleges from user
+            $table->integer('is_active')->default(0); // take priveleges from users
         });
     }
 

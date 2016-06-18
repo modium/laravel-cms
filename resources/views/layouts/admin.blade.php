@@ -146,7 +146,7 @@
 
                             <li>
                                 <!-- <a href="/posts/create">Create Post</a> -->
-                                <a href="{{route('admin.posts.create')}}">Create Post</a>                                
+                                <a href="{{route('admin.posts.create')}}">Create Post</a>
                             </li>
 
                         </ul>
@@ -158,11 +158,13 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Categories<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/categories">All Categories</a>
+                                <!-- <a href="/categories">All Categories</a> -->
+                                <a href="{{route('admin.categories.index')}}">All Categories</a>
                             </li>
 
                             <li>
-                                <a href="/categories/create">Create Category</a>
+                                <!-- <a href="/categories/create">Create Category</a> -->
+                                <a href="{{route('admin.categories.create')}}">Create Categories</a>                                
                             </li>
 
                         </ul>

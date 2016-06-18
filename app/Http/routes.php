@@ -31,6 +31,6 @@ Route::group(['middleware'=>'admin'], function(){
 
     Route::resource('admin/posts', 'AdminPostsController'); // With this, posts are admin-accessible only for now
 
-});
+    Route::resource('admin/categories', 'AdminCategoriesController');
 
-    // Route::resource('admin/posts', 'AdminPostsController'); // With this, posts are admin-accessible only for now
+});

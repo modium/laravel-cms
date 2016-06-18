@@ -33,4 +33,8 @@ Route::group(['middleware'=>'admin'], function(){
 
     Route::resource('admin/categories', 'AdminCategoriesController');
 
+    Route::resource('admin/media', 'AdminMediasController'); // Currently no resource, but for future
+
+    // Route::get('admin/media/upload',['as'=>'admin.media.upload']); // For custom URI
+
 });

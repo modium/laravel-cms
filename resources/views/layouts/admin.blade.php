@@ -25,7 +25,7 @@
     <![endif]-->
 
 
-
+    @yield('styles')
 
 </head>
 
@@ -164,7 +164,7 @@
 
                             <li>
                                 <!-- <a href="/categories/create">Create Category</a> -->
-                                <a href="{{route('admin.categories.create')}}">Create Categories</a>                                
+                                <a href="{{route('admin.categories.create')}}">Create Categories</a>
                             </li>
 
                         </ul>
@@ -176,11 +176,12 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Media<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/media">All Media</a>
+                                <!-- <a href="/media">All Media</a> -->
+                                <a href="{{route('admin.media.index')}}">All Media</a>
                             </li>
 
                             <li>
-                                <a href="">Upload Media</a>
+                                <a href="{{route('admin.media.create')}}">Upload Media</a>
                             </li>
 
                         </ul>
@@ -355,8 +356,7 @@
 <!-- jQuery -->
 <script src="{{asset('js/libs.js')}}"></script>
 
-
-@yield('footer')
+@yield('scripts')
 
 
 
